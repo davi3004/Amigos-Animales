@@ -162,7 +162,7 @@ En cuanto al formulario consta de tres partes como se puede observar a continuac
     registrar.php
 ```
 
-El archivo llamado `con_db.php` contiene la información necesaria para hacer la conexión con el administrador de base de datos y es el archivo que se debe modificar para el correcto funcionamiento de la web. También se encarga de indicar si ocurre un error durante el proceso de conexión. También hace un par de validaciones con ayuda de `mysqli_real_escape_string`sql esta sirve para crear una cadena SQL legal que se puede usar en una sentencia SQL, en este caso no est tan necesaria pero se prefirió su uso.
+El archivo llamado `con_db.php` contiene la información necesaria para hacer la conexión con el administrador de base de datos y es el archivo que se debe modificar para el correcto funcionamiento de la web. También se encarga de indicar si ocurre un error durante el proceso de conexión. También hace un par de validaciones con ayuda de `mysqli_real_escape_string` esta sirve para crear una cadena SQL legal que se puede usar en una sentencia SQL, en este caso no est tan necesaria pero se prefirió su uso.
 
 El archivo `formulario.php` se carga el formulario y se le da un bonito diseño por medio de css. Este carga un botón que al presionarlo se llama al archivo `registrar.php` para que este se encargue de hacer las validaciones pertinentes y de hacer la consulta SQL.
 
