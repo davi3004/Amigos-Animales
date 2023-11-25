@@ -166,4 +166,6 @@ El archivo llamado `con_db.php` contiene la información necesaria para hacer la
 
 El archivo `formulario.php` se carga el formulario y se le da un bonito diseño por medio de css. Este carga un botón que al presionarlo se llama al archivo `registrar.php` para que este se encargue de hacer las validaciones pertinentes y de hacer la consulta SQL.
 
-El archivo llamado `registrar.php`
+El archivo llamado `registrar.php` este se encarga de hacer la validación de input, comienza revisando que la llamada se haga por medio del método POST y que las variables no estén vacías, si alguno no se cumple el script cancela su ejecución. Luego se sanitizan las variables para evitar un ataque de inyección por SQL con ayuda de `mysqli_real_escape_string`. Luego se encarga de validar el correo con ayuda de `filter_var` que son filtros de validación, este se encarga de validar el correo, después valida la edad, asegurándose que esta sea de números positivos. Y lugo se encarga de validar el número telefónico para que este tenga una extensión máxima de 10 dígitos. Finalmente se encarga de hacer la consulta de SQL, esta no asigna un ID debido a que este está configurado para que se asigne automáticamente. Y finalmente nos menciona por medio de la consola si el registro se pudo completar o en caso contrario si no se pudo completar para posteriormente cerrar la conexión.
+
+
