@@ -127,5 +127,25 @@ Para continuar es necesario mencionar la esrtuctura de archivos del proyecto, la
             registrar.php
 ```
 
-La carpeta que se debe visitar desde el navegador es la de public, el navegador tomará el archivo index.html por si mismo y no se requiere acción adicional.
+La carpeta que se debe visitar desde el navegador es la de `public`, el navegador tomará el archivo `index.html` por si mismo y no se requiere acción adicional.
+
+---
+
+## Funcionamiento backend
+
+Para comprender los archivo usados detrás del formulario primero es necesario cambiar los datos que vienen en el archivo llamado `con_db.php` dentro de lsa capretas `Amigos-Animales/public/formulario
+`
+
+Dentro de este archivo es recomendable revisar la configuración de las variables de a cuerdo con los datos de MySQL
+
+```php
+$ruta = 'localhost';
+$usuario = 'USUARIO';
+$contraseña = 'CONTRASEÑA';
+$bd = 'NOMBRE_DE_LA_BASE_DE_DATOS';
+```
+
+> [!NOTE]
+> El servidor ya deberá estar activo en este punto del proceso.
+
 
