@@ -17,3 +17,5 @@ Se recomienda el uso de phpMuAdmin, no es obligatorio pero mejora la experiencia
 En segundo lugar recomiendo tener configurada la base de datos en donde se añadirán los datos que se envíen a través del formulario.
 El código de la base de datos usada se puede encontrar en el siguiente enlace. 
 
+[Código de SQL para crear la base de datos](./assets/registros.sql)
+
