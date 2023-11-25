@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	min-height: 100vh;
+	background-color: #fffbe0;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #343541 #ececf1;
+}
+
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ececf1;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #343541;
+	border-radius: 20px;
+	border: 3px solid #ececf1;
+}
+
+h2,
+h3 {
+	color: #f06d90;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1em;
+}
+.logoimg {
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	padding: 10px;
+}
+nav,
+header {
+	background-color: #68cbd1;
+	color: #01102d;
+	font-weight: bold;
+	padding: 10px;
+}
+nav {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav li {
+	height: 50px;
+	margin: auto;
+}
+nav a {
+	height: 100%;
+	padding: 0 40px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: #01102d;
+}
+nav a:hover {
+	background-color: #5e5d5d;
+	color: #fff;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 251, 224, 0.2);
+	backdrop-filter: blur(10px); /*10px*/
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.23);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sidebar li {
+	margin: 0%;
+	width: 100%;
+}
+.sidebar a {
+	width: 100%;
+}
+.botonMenú {
+	display: none;
+}
+nav,
+header {
+	background-color: #68cbd1;
+	color: #01102d;
+	font-weight: bold;
+	padding: 10px;
+}
+header {
+	text-align: center;
+}
+header img {
+	display: block;
+	margin: 0 auto;
+}
+
+hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+	margin-top: 0.4em; /* Añadí "em" para especificar la unidad de medida */
+	margin-bottom: 0.4em; /* Añadí "em" para especificar la unidad de medida */
+}
+.contenido {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-right: 1.5em;
+	margin-left: 1.5em;
+	margin-top: 0.4;
+	margin-bottom: 0.4;
+}
+.formulario label {
+	padding: 0.5em;
+}
+
+input .datos {
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 15px;
+	min-width: 800px;
+}
+
+#nombre,
+#direccion,
+#telefono,
+#correo,
+#edad,
+#ciudad {
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 15px;
+	min-width: 800px;
+}
+
+.boton {
+	min-width: 200px;
+	border-radius: 10px;
+	padding: 0.5em;
+	margin: 1em;
+}
+
+.boton:hover {
+	background-color: #f06d90;
+	color: #fff;
+}
+
+.tarjeta {
+	padding: 0.5em;
+	margin: 0.5em;
+	max-width: 400px;
+}
+.tarjeta p {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+}
+
+.tarjetas {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.tarjeta-horizontal {
+	display: flex;
+}
+
+.tarjeta-horizontal img {
+	width: 268px;
+	height: 268px;
+	padding: 1em;
+}
+.tarjeta-horizontal div {
+	padding: 1em;
+}
+
+.imagen-perro {
+	max-height: 400px;
+	min-width: 800px;
+	margin: 1rem;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 0.1em;
+}
+
+@media (max-width: 800px) {
+	.hideOnMobile {
+		display: none;
+	}
+	.botonMenú {
+		display: block;
+	}
+	.imagen-perro {
+		max-height: 200px;
+		min-width: 400px;
+		margin: 1rem;
+	}
+	.tarjeta-horizontal {
+		display: flex;
+		flex-flow: wrap;
+	}
+	hr {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	.formulario input .datos {
+		min-width: 400px;
+	}
+	#nombre,
+	#direccion,
+	#telefono,
+	#correo,
+	#edad,
+	#ciudad {
+		min-width: 400px;
+	}
+}
+
+@media (max-width: 400px) {
+	.sidebar {
+		width: 100%;
+	}
+	.imagen-perro {
+		max-height: 100px;
+		min-width: 200px;
+		margin: 1rem;
+	}
+	.tarjeta-horizontal {
+		display: flex;
+		flex-flow: wrap;
+	}
+	#nombre,
+	#direccion,
+	#telefono,
+	#edad,
+	#ciudad,
+	#correo {
+		min-width: 200px;
+	}
+}
+
+.error {
+	color: red;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}

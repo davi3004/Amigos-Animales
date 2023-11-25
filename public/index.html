@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" contenido="width=device-width, initial-scale=1.0" />
+    <title>Amigos Animales</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css" />
+
+    <link rel=" shortcut icon" type="image/png" href="../assets/img/Logo amigos animales.png" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="logoimg" src="../assets/img/Logo amigos animales.png" /></a>
+    </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a>
+            </li>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="./index.html">Inicio</a></li>
+            <li class="hideOnMobile"><a href="./novedades.html">Novedades</a></li>
+            <li class="hideOnMobile"><a href="./servicios.html">Servicios</a></li>
+            <li class="hideOnMobile"><a href="./productos.html">Productos</a></li>
+            <li onclick=showSidebar() class="botonMenú">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contenido">
+            <h2>Sobre nosotros.</h2>
+            <p>
+
+                En ‘AMIGOS ANIMALES’, nos apasiona el bienestar de tus mascotas.
+                Fundada en 2023 por el Dr. Juan Pérez, un veterinario con mucha
+                experiencia, nos esforzamos por proporcionar un cuidado excepcional
+                para tus amigos peludos. Creemos en tratar a cada mascota como si
+                fuera nuestra propia familia, y nos enorgullece ofrecer una variedad
+                de servicios y productos para satisfacer las necesidades únicas de
+                cada animal.
+            </p>
+            <img class="imagen-perro" src="../assets/img/fondo_perro.jpg">
+            <div class="tarjeta-horizontal">
+            </div>
+        </div>
+        <div class="contenido">
+            <h2>¿Necesitas que te contactemos?</h2>
+            <p>Si necesitas que te contactemos, no dudes en llenar el siguiente formulario. </p>
+            <!--Botón que lleve a la página del formulario ./formulario.php-->
+            <a href="./formulario/formulario.php"><button class="boton">Formulario</button></a>
+        </div>
+        <div class="contenido">
+            <h2>Novedades</h2>
+            <hr />
+            <p>
+                Para celebrar Halloween, te espera una gran sorpresa con un descuento
+                espeluznante del 15% en todos los servicios y productos durante la
+                última semana de octubre y primera de noviembre.
+            </p>
+            <hr />
+
+            <p>¡Tu mascota estará lista para las fiestas!</p>
+            <p>Del 1 al 31 de diciembre de 2023</p>
+            <p>
+                En la Clínica Veterinaria Navidad queremos que tu mascota disfrute de
+                unas felices fiestas, por eso te ofrecemos un 20% de descuento en
+                todos los servicios.
+            </p>
+        </div>
+
+        <div class="contenido">
+            <h2>Servicios.</h2>
+            <hr />
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Consulta médica</h3>
+                    <p>
+                        Ofrecemos consultas médicas especializadas para animales de todas
+                        las edades y razas. Nuestros veterinarios altamente capacitados
+                        realizarán exámenes físicos, diagnósticos y brindarán orientación
+                        sobre la salud y el bienestar de su mascota.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Vacunación y Prevención</h3>
+                    <p>
+                        Proporcionamos programas de vacunación personalizados para perros,
+                        gatos y otros animales. Además, ofrecemos servicios de
+                        desparasitación y prevención de enfermedades para mantener a las
+                        mascotas protegidas y saludables.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Cirugía Veterinaria</h3>
+                    <p>
+                        Contamos con un equipo quirúrgico experto y tecnología avanzada
+                        para realizar una variedad de procedimientos quirúrgicos, desde
+                        esterilizaciones y castraciones hasta cirugías de tejidos blandos
+                        y ortopédicas. Garantizamos cuidados postoperatorios óptimos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido">
+            <h2>Productos</h2>
+            <hr />
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Alimento Premium para Mascotas</h3>
+                    <p>
+                        Ofrecemos una gama de alimentos premium para perros y gatos,
+                        formulados para satisfacer las necesidades nutricionales
+                        específicas de cada etapa de la vida. Estos alimentos están hechos
+                        con ingredientes de alta calidad para promover la salud y la
+                        vitalidad de las mascotas.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Accesorios y Juguetes Interactivos</h3>
+                    <p>
+                        Disponemos de una amplia variedad de accesorios, desde correas y
+                        collares elegantes hasta juguetes interactivos que estimulan la
+                        mente y el cuerpo de las mascotas. Estos productos están diseñados
+                        para proporcionar entretenimiento y enriquecimiento a los
+                        animales.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Productos de Higiene y Cuidado</h3>
+                    <p>
+                        Ofrecemos productos de higiene como champús suaves, cepillos y
+                        productos de limpieza dental para mantener a las mascotas limpias
+                        y saludables. También proporcionamos productos de cuidado como
+                        camas cómodas y jaulas espaciosas para el descanso adecuado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dr. Juan Pérez Rodríguez</p>
+        <p>Teléfonos: +52 55 1234 5678, +52 55 8765 4321</p>
+        <p>Dirección: Calle Falsa 123, Tlalnepantla de Baz, México</p>
+        <p>Correo electrónico: dr.juan.perez@cuidadocanino.com</p>
+        <p>Derechos reservados 2023-2024</p>
+    </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>

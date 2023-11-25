@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang=" es-mx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contenido="width=device-width, initial-scale=1.0">
+        <title>Servicios Amigos Animales</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+        <script src="../assets/js/scriptlistener.js"></script>
+        <link rel=" shortcut icon" type="image/png" href="../assets/img/Logo amigos animales.png" />
+    </head>
+
+<body>
+    <header>
+        <a href="./index.html"><img class="logoimg" src="../assets/img/Logo amigos animales.png"></a>
+    </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a>
+            </li>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="./index.html">Inicio</a></li>
+            <li class="hideOnMobile"><a href="./novedades.html">Novedades</a></li>
+            <li class="hideOnMobile"><a href="./servicios.html">Servicios</a></li>
+            <li class="hideOnMobile"><a href="./productos.html">Productos</a></li>
+            <li onclick=showSidebar() class="botonMenú">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contenido">
+            <div class="contenido">
+                <h2>Servicios</h2>
+
+            </div>
+            <hr>
+            <div>
+
+
+                <h3>Consulta Médica</h3>
+                <p>Ofrecemos consultas médicas especializadas para animales de todas las edades y razas. Nuestros
+                    veterinarios
+                    altamente capacitados realizarán exámenes físicos, diagnósticos y brindarán orientación sobre la
+                    salud y
+                    el
+                    bienestar de su mascota.</p>
+            </div>
+            <hr>
+            <div>
+
+                <h3>Vacunación y Prevención</h3>
+                <p>Proporcionamos programas de vacunación personalizados para perros, gatos y otros animales. Además,
+                    ofrecemos
+                    servicios de desparasitación y prevención de enfermedades para mantener a las mascotas protegidas y
+                    saludables.</p>
+
+            </div>
+            <hr>
+            <div>
+
+                <h3>Cirugía Veterinaria</h3>
+                <p>Contamos con un equipo quirúrgico experto y tecnología avanzada para realizar una variedad de
+                    procedimientos
+                    quirúrgicos, desde esterilizaciones y castraciones hasta cirugías de tejidos blandos y ortopédicas.
+                    Garantizamos cuidados postoperatorios óptimos.</p>
+            </div>
+            <hr>
+            <div>
+
+                <h3>Cuidado de Urgencia 24/7</h3>
+                <p>Estamos disponibles las 24 horas del día, los 7 días de la semana, para atender emergencias médicas
+                    de
+                    animales. Nuestro equipo de veterinarios y personal de apoyo está preparado para brindar atención
+                    inmediata
+                    y compasiva en situaciones de emergencia.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Dr. Juan Pérez Rodríguez</p>
+        <p>Teléfonos: +52 55 1234 5678, +52 55 8765 4321</p>
+        <p>Dirección: Calle Falsa 123, Tlalnepantla de Baz, México</p>
+        <p>Correo electrónico: dr.juan.perez@cuidadocanino.com</p>
+        <p>Derechos reservados 2023-2024</p>
+    </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'flex'
+
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
+<title>Document</title>
