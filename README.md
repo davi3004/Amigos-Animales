@@ -10,7 +10,7 @@ Para poder hacer que la página web funcione es necesario montarla a través de 
 Este software puede ser descargado por medio del siguiente enlace. 
 [Laragon/Downloads](https://laragon.org/download/index.html)
 También es necesario tener MySQL instalad.
-Se recomienda el uso de phpMuAdmin, no es obligatorio pero mejora la experiencia al usarse. 
+Se recomienda el uso de phpMyAdmin, no es obligatorio pero mejora la experiencia al usarse. 
 
 ---
 
@@ -148,4 +148,20 @@ $bd = 'NOMBRE_DE_LA_BASE_DE_DATOS';
 > [!NOTE]
 > El servidor ya deberá estar activo en este punto del proceso.
 
+--- 
 
+## Funcionamiento
+
+El funcionamiento de la página web es sencillo, tiene un menú responsivo de a cuerdo con el dispositivo donde se visualice la página web y también se buscó mantener un diseño de a cuerdo con el logo de la veterinaria. 
+
+En cuanto al formulario consta de tres partes como se puede observar a continuación.
+
+```
+    con_db.php
+    formulario.php
+    registrar.php
+```
+
+El archivo llamado `con_db.php` contiene la información necesaria para hacer la conexión con el administrador de base de datos y es el archivo que se debe modificar para el correcto funcionamiento de la web.
+
+El archivo `formulario.php`
