@@ -22,7 +22,6 @@ El código de la base de datos usada se puede encontrar en el siguiente enlace.
 O se puede copiar el siguiente código.
 
 '''
-
 CREATE DATABASE 'registros';
 USE 'registros';
 -- phpMyAdmin SQL Dump
@@ -88,7 +87,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
 '''
 
